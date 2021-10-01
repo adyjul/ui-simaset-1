@@ -1,0 +1,455 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <title>Simaset</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	    <!--fontawesome-->
+    <link rel="stylesheet" href="./css/all.min.css">
+		
+		 <link rel="stylesheet" href="font/font/flaticon.css">
+  </head>
+    
+  
+  <body>
+  
+  
+  <div id="wrapper">
+   <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+    <nav class="fixed-top align-top sidebar-overflow" id="sidebar-wrapper" role="navigation">
+       <div class="simplebar-content" style="padding: 0px; ">
+				<a class="sidebar-brand" href="index.html">
+          <span class="align-middle">Coba Backend</span>
+        </a>
+
+        <!-- Items -->
+
+		<ul class="navbar-nav align-self-stretch nav-items" style="position: absolute; left: 0px; transition: all 0.5s ease !important; width: 100% !important;">
+	        
+            <li class="nav-item">
+                <a href="./index.html" class="nav-link">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>
+                    Dashboard                 
+                  </p>
+                </a>            
+            </li> 
+
+            <li class="nav-item ">
+                <a href="#" class="nav-link nav-sub" data-name="data-aset">
+                    <i class="far fa-address-card"></i>
+                  <p class="items">
+                    Data Aset                
+                  </p>
+                  <i class="fas fa-chevron-right"></i>
+                </a>            
+            </li>
+            
+            <li class="nav-item"  >
+                <a href="#" class="nav-link nav-sub" data-name="mutasi">
+                    <i class="far fa-address-card"></i>
+                  <p class="items">
+                    Mutasi
+                  </p>
+                  <i class="fas fa-chevron-right"></i>
+                </a>            
+            </li>
+
+            <li class="nav-item"  >
+                <a href="#" class="nav-link nav-sub" data-name="barcode">
+                    <i class="far fa-address-card"></i>
+                  <p class="items">
+                    Cetak Barcode
+                  </p>
+                  <i class="fas fa-chevron-right"></i>
+                </a>            
+            </li>            
+
+            <li class="nav-item"  >
+                <a href="#" class="nav-link nav-sub" data-name="aset">
+                    <i class="far fa-address-card"></i>
+                  <p class="items">
+                    Aset Ruangan
+                  </p>
+                  <i class="fas fa-chevron-right"></i>
+                </a>            
+            </li>            
+
+		</ul>
+
+        <!-- end Items -->
+
+        <!-- sub Item -->
+
+        <ul class="navbar-nav align-self-stretch nav-sub-items nav-subItems-data-aset" style="position: absolute; left: 20rem; transition: all 0.5s ease; width: 100%;">
+            <li class="sidebar-header">
+                <div class="sub-item-show btn" style="padding: 0px;">
+                    <i class="fas fa-chevron-left"></i>
+                    <p>Data Aset</p>
+                </div>
+            </li>            
+
+            <li class="nav-item">
+                <a href="./bar-chart.html" class="nav-link">                  
+                  <p>Data Aset</p>                 
+                </a>            
+            </li> 
+            
+           
+        </ul>
+
+        <ul class="navbar-nav align-self-stretch nav-sub-items-hide nav-subItems-mutasi" style="position: absolute; left: 20rem; transition: all 0.5s ease; width: 100%;">
+            <li class="sidebar-header">
+                <div class="sub-item-show btn" style="padding: 0px;">
+                    <i class="fas fa-chevron-left"></i>
+                    <p>Mutasi</p>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">                
+                  <p>Mutasi</p>
+                </a>            
+            </li>      
+           
+        </ul>
+
+        <ul class="navbar-nav align-self-stretch nav-sub-items-hide nav-subItems-barcode" style="position: absolute; left: 20rem; transition: all 0.5s ease; width: 100%;">
+            <li class="sidebar-header">
+                <div class="sub-item-show btn" style="padding: 0px;">
+                    <i class="fas fa-chevron-left"></i>
+                    <p>Barcode</p>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">                
+                  <p>Barcode</p>
+                </a>            
+            </li>      
+           
+        </ul>
+
+        <ul class="navbar-nav align-self-stretch nav-sub-items-hide nav-subItems-aset" style="position: absolute; left: 20rem; transition: all 0.5s ease; width: 100%;">
+            <li class="sidebar-header">
+                <div class="sub-item-show btn" style="padding: 0px;">
+                    <i class="fas fa-chevron-left"></i>
+                    <p>Aset Ruangan</p>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="aset-ruangan.html" class="nav-link">                
+                  <p>Aset Ruangan</p>
+                </a>            
+            </li>      
+           
+        </ul>        
+        <!-- end sub Item -->				
+		</div>	   	   
+    </nav>
+        <!-- /#sidebar-wrapper -->
+
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">         			
+		    <div id="content">
+
+        <div class="container-fluid p-0 px-lg-0 px-md-0">
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light my-navbar">
+
+          <!-- Sidebar Toggle (Topbar) -->
+            <div type="button"  id="bar" class="nav-icon1 hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+               <span></span>
+			    <span></span>
+				 <span></span>
+            </div>			                  
+
+            <i class="fas fa-search fa-sm btn btn-navbar-search"></i>
+
+          <div class="navbar-search-overlap collapse " id="site-navbar-search" style="">
+            <form role="search">
+                <div class="form-group">
+                    <div class="input-search">
+                        <input type="text" class="form-control topBar-input" name="site-search" placeholder="Search...">
+                        <i class="fas fa-times btn btn-custom-navbar"></i>
+                    </div>
+                </div>
+            </form>
+          </div>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">                        
+                <div class="dropdown">
+                    <span href="#" id="imageDropdown" data-toggle="dropdown">                    
+                        <i class="fas fa-user-circle icon-person"></i>                    
+                    </span>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="imageDropdown">
+                      <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">                    
+                        <i class="fa fa-cog mb-2" aria-hidden="true"></i>
+                        Setting</a>                  
+                      </li>
+                        <li role="presentation" class="divider"></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                        <i class="fa fa-user" aria-hidden="true"></i>  
+                        Profile</a>
+                      </li>                
+                        <hr>
+                      <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">
+                          <i class="fa fa-sign-out" aria-hidden="true"></i>
+                          Logout</a>
+                      </li>
+                    </ul>
+                </div>
+          </ul>
+    </nav>
+        <!-- End of Topbar -->
+
+        <!-- awal konten -->
+    
+
+        <div class="container-fluid px-lg-4 dashboard">
+          <div class="row">
+          <div class="col-md-12 mt-lg-4 mt-4">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                      <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                      <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> 
+                Download Report</a>
+                    </div>
+                </div>
+          <div class="col-md-12">
+                 <div class="row">
+                            <div class="col-sm-4 col-md-4">
+                              <div class="card card-top">
+                                <div class="card-body">
+                                  <h5 class="card-title mb-4">Aset Barang A</h5>
+                                  <h1 class="display-5 mt-1 mb-3">2.382</h1>
+                                  <div class="mb-1">
+                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
+                                    <span class="text-muted">Since last week</span>
+                                  </div>
+                                </div>
+                                <i class="fas fa-box-open"></i>
+                              </div>                              
+                            </div>
+
+                            <div class="col-sm-4 col-md-4">
+                              <div class="card card-top">
+                                <div class="card-body">
+                                  <h5 class="card-title mb-4">Aset Barang B</h5>
+                                  <h1 class="display-5 mt-1 mb-3">2.382</h1>
+                                  <div class="mb-1">
+                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
+                                    <span class="text-muted">Since last week</span>
+                                  </div>
+                                </div>
+                                <i class="fas fa-box-open"></i>
+                              </div>                              
+                            </div>
+
+                            <div class="col-sm-4 col-md-4">
+                              <div class="card card-top">
+                                <div class="card-body">
+                                  <h5 class="card-title mb-4">Aset Barang C</h5>
+                                  <h1 class="display-5 mt-1 mb-3">2.382</h1>
+                                  <div class="mb-1">
+                                    <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
+                                    <span class="text-muted">Since last week</span>
+                                  </div>
+                                </div>
+                                <i class="fas fa-box-open"></i>
+                              </div>                              
+                            </div>
+                  </div>                                                        
+                </div>
+          </div>
+          
+          
+          
+          
+          <div class="col-md-12">            
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <canvas id="chBar" height="100"></canvas>
+                  </div>
+                </div>
+              </div>                                
+          </div>
+
+          <div class="col-md-12">
+            
+          </div>
+          
+               
+                              <!-- column -->
+          <div class="col-md-12 mt-4">
+
+
+
+
+            <div class="card">
+              <div class="card-body">
+                            <!-- title -->
+                  <div class="d-md-flex align-items-center">
+                      <div>
+                        <h4 class="card-title">Daftar Barang Masuk</h4>
+                        <h5 class="card-subtitle">Data Barang Masuk</h5>
+                      </div>
+                      <div class="ml-auto">
+                        <div class="dl">
+                          <select class="custom-select">
+                            <option value="0" selected="">Bulan ini</option>
+                              <option value="1">Hari ini</option>
+                              <option value="2">Minggu ini</option>
+                              <option value="3">Tahun ini</option>
+                          </select>
+                        </div>
+                      </div>
+                  </div>
+                <!-- title -->
+                </div>
+              <div class="table-responsive">
+                <table class="table v-middle">
+                  <thead>
+                    <tr class="bg-light">
+                      <th class="border-top-0">Nama Barang</th>
+                      <th class="border-top-0">No Barang</th>
+                      <th class="border-top-0">Lokasi Gedung</th>
+                      <th class="border-top-0">Jumlah Barang</th>
+                      <th class="border-top-0">Tanggal Masuk</th>                                                                                                                                                              
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h4 class="m-b-0 font-16">LCD Proyektor</h4>
+                      </td>
+                      <td>C1090</td>
+                      <td>Gedung Kuliah Bersama (GKB) 3</td>
+                      <td>
+                        <label class="label label-danger">3</label>
+                      </td>
+                      <td>1 januari 2001</td>                                                      
+                    </tr>                                                  
+                    <tr>
+                      <td>
+                        <h4 class="m-b-0 font-16">LCD Proyektor</h4>
+                      </td>
+                      <td>C1090</td>
+                      <td>Gedung Kuliah Bersama (GKB) 3</td>
+                      <td>
+                        <label class="label label-danger">3</label>
+                      </td>
+                      <td>1 januari 2001</td>                                                      
+                    </tr>
+                    <tr>
+                      <td>
+                        <h4 class="m-b-0 font-16">LCD Proyektor</h4>
+                      </td>
+                      <td>C1090</td>
+                      <td>Gedung Kuliah Bersama (GKB) 3</td>
+                      <td>
+                        <label class="label label-danger">3</label>
+                      </td>
+                      <td>1 januari 2001</td>                                                      
+                    </tr>
+                    <tr>
+                      <td>
+                        <h4 class="m-b-0 font-16">LCD Proyektor</h4>
+                      </td>
+                      <td>C1090</td>
+                      <td>Gedung Kuliah Bersama (GKB) 3</td>
+                      <td>
+                        <label class="label label-danger">3</label>
+                      </td>
+                      <td>1 januari 2001</td>                                                      
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>                                       
+      </div>
+</div>
+
+
+        <!-- akhir konten -->
+        
+
+      			
+			
+			
+			
+        
+			
+			
+			
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-left">
+							<p class="mb-0">
+								<a href="index.html" class="text-muted"><strong>Template was remake by Ady Juliyanto</strong></a> &copy
+							</p>
+						</div>
+						<div class="col-6 text-right">
+							<ul class="list-inline">
+								<li class="footer-item">
+									<a class="text-muted" href="#">Support</a>
+								</li>
+								<li class="footer-item">
+									<a class="text-muted" href="#">Help Center</a>
+								</li>
+								<li class="footer-item">
+									<a class="text-muted" href="#">Privacy</a>
+								</li>
+								<li class="footer-item">
+									<a class="text-muted" href="#">Terms</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+        </div>
+		    </div>`
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+  
+  
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/chart.js"></script>
+    <script src="./dataJSON/data.js"></script>
+    <script src="./js/data-chart.js"></script>
+    <script src="./js/custom.js"></script>      
+ 
+  
+  
+  </body>
+</html>
