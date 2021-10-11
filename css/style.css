@@ -339,6 +339,40 @@ sidebar
 
 
 
+/* aset gedung */
+
+#gedung .card{
+    margin-bottom: 24px;
+    border: none;
+    box-shadow: 0 0 0.999rem 0 rgb(33 37 41 / 23%);
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+#gedung .add-data{
+    margin-bottom: 20px;    
+}
+
+#gedung .content-gedung{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#gedung .menu{
+    display: flex;
+    justify-content: center;    
+}
+
+#gedung .menu a{
+    margin-right: 10px;
+}
+
+
+/* end aset gedung */
+
+
+
 /*---------------------------------
 cross-bar animation
 ----------------------*/

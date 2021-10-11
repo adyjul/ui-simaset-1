@@ -1,0 +1,33 @@
+/* sub master */
+
+#sub-master .table tbody i{
+    padding: 2px 1px;
+}
+
+#sub-master .content-sub-master{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* and sub master */
+
+
+
+
+/* some sub master */
+
+#some-sub-master ,table tbody i{
+    padding: 2px 1px;
+}
+
+#some-sub-master .content-some-sub{
+    background-color:  white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#some-sub-master .content-some-sub .add-data{
+    margin-bottom: 20px;
+}
+
+/* end some sub master */
