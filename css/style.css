@@ -21,14 +21,16 @@ html { height: 100%;}
 sidebar
 ----------------------*/
 
+
+
 #sidebar-wrapper {
     z-index: 1000;
     height: 100%;
-	width:0px;
+	width:0px;      
 	left: -50px;
     overflow-y: auto;
     overflow-x: hidden;
-    background: #222e3c;
+    background: #ffffff;
     transition: all 0.5s ease;
 }
 
@@ -46,12 +48,24 @@ sidebar
 	border-radius:10px;
 }
 
+.logo-brand{
+    display: flex !important;
+    justify-content: center;
+}
+
+.title-brand{
+    display: flex !important;
+    justify-content: center;
+    background: #3c4c61 !important ;
+    padding-bottom: 0px;    
+}
 
 .sidebar-brand {
     font-weight: 600;
     font-size: 1.15rem;
     padding: 1.15rem 1.5rem;
     display: block;
+    background: #303f52;
     color: #f8f9fa;
 }
 .sidebar-header{
@@ -82,9 +96,19 @@ sidebar
 
 
 .navbar-nav > li > a.active{
-     color: #e9ecef!important;
-    background: linear-gradient(90deg,rgba(59,125,221,.1),rgba(59,125,221,.0875) 50%,transparent);
-    border-left:4px solid #3b7ddd;
+    color: #e9ecef!important;
+    background: linear-gradient(90deg,rgba(59,125,221,.1),rgba(59,125,221,.0875) 100%,transparent);
+    /* border-left:4px solid #3b7ddd; */
+}
+
+.nav-sub-items{
+    position: absolute; 
+    left: 20rem; transition: all 0.5s ease; 
+    width: 100%;
+}
+
+.nav-sub-items.active{
+
 }
 
 .navbar-nav .has-sub > a.collapsed::after {
@@ -131,6 +155,8 @@ sidebar
      left: 0px;
     overflow-y:auto;
     overflow-x:hidden;
+    -webkit-box-shadow: 9px 0px 3px -2px rgba(0,0,0,0.28); 
+    box-shadow: 9px 0px 3px -2px rgb(0 0 0 / 3%);
     transition: all 0.5s ease;
 }
 
@@ -139,14 +165,45 @@ sidebar
   
 }
 
+.nav-items{
+    position: absolute; left: 0px; 
+    transition: all 0.5s ease !important; 
+    width: 100% !important;
+}
+
+.nav-items.non{
+    position: absolute; left: -20rem; 
+    transition: all 0.5s ease !important; 
+    width: 100% !important;
+}
+
+.nav-sub-items{ 
+    position: absolute; 
+    left: 20rem; 
+    transition: all 0.5s ease; 
+    width: 100%;
+}
+
+.nav-sub-items.active{ 
+    position: absolute; 
+    left: 0px; 
+    transition: all 0.5s ease; 
+    width: 100%;
+}
+
 
 .nav-item .nav-link{
-    display:block;
-    color:white!important;
+    display:block;    
 	text-transform:capitalize;
     text-decoration: none;
-    padding:6px 10px; 
+    padding:6px 10px !important; 
     transition:0.4s ease;	
+    margin-bottom: 15px;
+}
+
+.navbar-nav li p,
+.navbar-nav li i {
+    color: #333;
 }
 
 .navbar-nav > li > a i:before{
@@ -463,7 +520,7 @@ header navbar design
 
 .navbar-nav > li > a >i{
     font-size: 18px;
-    color:#b3b3b3;
+    /* color:#b3b3b3; */
 	margin:8px 0px 0px 0px;
 	padding:0px;
 }

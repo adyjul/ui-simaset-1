@@ -28,44 +28,42 @@ $(document).ready(function(){
         $(".topBar-input").css("width",lebarNavbarResize-500)
     })
 
+    let subItem = '';
     
     $(".nav-sub").click(function(){            
-       var value = $(this).attr("data-name");        
-       dinamisValue(value)              
+       subItem = $(this).attr("data-name");   
+       $(this).parent().parent().addClass('non');     
+       $(".nav-subItems-"+subItem).addClass('active');              
     })
     
 
-    let subItem = '';
-
-    function dinamisValue(value){
-        subItem = value;        
-        $(".nav-subItems-"+subItem).css("left","0px")
-        $(".nav-items").css("left","-20rem")        
-
-        $(".sub-item-show").click(function(){  
-            console.log("hai")
-            $(".nav-subItems-"+value).css("left","20rem")
-            $(".nav-items").css("left","0px")
-        })
-    }
+    
+    $(document).on("click",".sub-item-show",function(){
+        $('.main-nav').addClass('active')
+        $('.main-nav').removeClass('non')
+        console.log(subItem)
+        $(".nav-subItems-"+subItem).addClass('non');              
+        $(".nav-subItems-"+subItem).removeClass('active');              
+    })        
+    
 
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
     
-    $(".nav-some").click(function(){
-        var value = $(this).attr("data-name");
-        dinamisSomeValue(value);
-    })      
+    // $(".nav-some").click(function(){
+    //     var value = $(this).attr("data-name");
+    //     dinamisSomeValue(value);
+    // })      
 
-    function dinamisSomeValue(value){        
-        $(".nav-someItems-"+value).css("left","0px");
-        $(".nav-subItems-"+subItem).css("left","-20rem")
+    // function dinamisSomeValue(value){        
+    //     $(".nav-someItems-"+value).css("left","0px");
+    //     $(".nav-subItems-"+subItem).css("left","-20rem")
 
-        $(".some-items").click(function(){
-            $(".nav-someItems-"+value).css("left","-20rem");
-            $(".nav-subItems-"+subItem).css("left","0");
-        })
-    }
+    //     $(".some-items").click(function(){
+    //         $(".nav-someItems-"+value).css("left","-20rem");
+    //         $(".nav-subItems-"+subItem).css("left","0");
+    //     })
+    // }
 
 })  
