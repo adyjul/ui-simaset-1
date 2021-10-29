@@ -429,45 +429,6 @@ sidebar
 /* end aset gedung */
 
 
-/* laporan */
-
-#laporan .content{
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-#laporan .content .content-left .img-content{
-    border-radius: 10px;
-    margin-right: 50px !important;
-    -webkit-box-shadow: 9px 0px 3px -2px rgba(0,0,0,0.28); 
-    box-shadow: 9px 0px 3px -2px rgb(0 0 0 / 10%);
-}
-
-#laporan .card{
-    cursor: pointer;
-    background-color: #c6d7e6;
-    margin-bottom: 0px;
-}
-
-#laporan .card.active{
-    background-color: #36bea6;
-}
-
-#laporan .card.active p,
-#laporan .card.active i
-{
-    color: white !important;
-}
-
-#laporan ul li{
-    list-style-type: none;
-}
-/* end laporan */
-
-
-
 
 /*---------------------------------
 cross-bar animation
@@ -794,12 +755,6 @@ footer.footer ul {
 /*---------------------------------
 footer
 ----------------------*/
-
-/* responsive */
-
-
-
-/* end responsive */
 
 
 
